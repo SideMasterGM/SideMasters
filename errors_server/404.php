@@ -1,0 +1,1 @@
+<h1>Pagina no encontrada compañero!. = Error 404</h1><hr>

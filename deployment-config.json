@@ -1,0 +1,9 @@
+{
+    "type": "ftp",
+    "host": "ftp.sidemasters.com",
+    "username": "sidemasters.com",
+    "password": "Inform@tico",
+    "port": 21,
+    "remotePath": "/",
+    "uploadOnSave": false
+}

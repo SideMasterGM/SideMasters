@@ -1,0 +1,88 @@
+#colorNav > ul > li {
+	list-style: none;
+	display: inline-block;
+	line-height: 1;
+	position:absolute;
+	right: 5px;
+	top: 4px;
+	cursor: pointer;
+	padding: 8px;
+	transition-duration: .4s;
+	transform: linear;
+	background-color: rgba(0, 0, 0, .5);
+	color: #fff;
+	border-radius: 50% 50%;
+}
+
+#colorNav:hover > ul > li {
+	transition-duration: .4s;
+	transform: linear;
+	background-color: steelblue;
+	box-shadow: inset 0 0 1px 0px #000;
+}
+
+#colorNav > ul > li > a {
+	text-decoration:none !important;
+	font-size: 24px;
+}
+
+#colorNav li ul {
+	position:absolute;
+	list-style:none;
+	text-align:center;
+	width:180px;
+	left:-145px;
+	top:17px;
+	font:bold 12px 'Open Sans Condensed', sans-serif;
+	max-height:0;
+	overflow:hidden;
+	-webkit-transition:max-height 0.3s linear;
+	-moz-transition:max-height 0.3s linear;
+	transition:max-height 0.3s linear;
+}
+
+#colorNav li ul li {
+	background-color:#313131;
+}
+
+#colorNav li ul li a {
+	padding:12px;
+	color:#fff !important;
+	text-decoration:none !important;
+	display:block;
+}
+
+#colorNav li ul li:nth-child(odd){ /* zebra stripes */
+	background-color: #363636;
+}
+
+#colorNav li ul li:hover {
+	background-color: #444;
+}
+
+#colorNav li ul li:first-child {
+	border-radius:3px 3px 0 0;
+	margin-top:25px;
+	position:relative;
+}
+
+#colorNav li ul li:first-child:before {
+	content:'';
+	position:absolute;
+	width:1px;
+	height:1px;
+	border:5px solid transparent;
+	border-bottom-color:#313131;
+	left:90%;
+	top:-10px;
+	margin-left:-5px;
+}
+
+#colorNav li ul li:last-child {
+	border-bottom-left-radius:3px;
+	border-bottom-right-radius:3px;
+}
+
+#colorNav li:hover ul{
+	max-height:200px;
+}

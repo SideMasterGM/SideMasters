@@ -1,0 +1,1 @@
+<a href="javascript:if(navigator.appName.indexOf('Microsoft Internet Explorer')!=-1){window.external.AddFavorite (''+window.document.URL,''+window.document.title);} if(navigator.appName.indexOf('Netscape')!=-1){window.sidebar.addPanel(''+window.document.title,''+window.document.URL,'')} else{parent.location=(location.href);}">Guardar</a> 

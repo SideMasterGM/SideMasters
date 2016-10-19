@@ -1,0 +1,12 @@
+#footer-section {
+	box-shadow: 0px 0px 2px 0px #000;
+	-webkit-box-shadow: 0px 0px 2px 0px #000;
+	-moz-box-shadow: 0px 0px 2px 0px #000;
+	-ms-box-shadow: 0px 0px 2px 0px #000;
+	-o-box-shadow: 0px 0px 2px 0px #000;
+	z-index: -10;
+}
+
+#footer-section p.info {
+	text-align: center;
+}

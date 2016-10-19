@@ -1,0 +1,18 @@
+*********************************************
+				Ceo Developers
+*********************************************
+		File Create: 02/05/2015 14:24
+*********************************************
+(1) Aplicar Scroll Infinito en la capa principal.
+(2) Escribir el sistema de Login y Sign In.
+
+Date: 20/05/2015 - 20:03
+=======================================================================
+(3) Escribir seguridad en cada uno de los ficheros fuentes .php.
+(4) Corregir vulnerabilidad en el Scroll Infinito.
+
+How to eliminate a file with JS?
+
+20/03/2016
+------------------------
+Limitar las entradas en las Categorías, páginar...

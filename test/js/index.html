@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Menu Context</title>
+
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/prettify/r224/prettify.css" rel="stylesheet">
+    <link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet">
+
+  </head>
+  <body onload="prettyPrint()">
+  <br/>
+    <div class="container">
+        <div id="context-menu2">
+          <ul class="dropdown-menu" role="menu">
+              <li><a tabindex="-1">Action</a></li>
+              <li><a tabindex="-1">Another action</a></li>
+              <li><a tabindex="-1">Something else here</a></li>
+              <li class="divider"></li>
+              <li><a tabindex="-1">Separated link</a></li>
+          </ul>
+        </div>
+	      
+        <div id="context2" data-toggle="context" style="height:300px;width:650px;border:1px solid #ddd;">
+        </div>   
+    </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="bootstrap-contextmenu.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/prettify/r224/prettify.js"></script>
+    <script>
+      
+      
+      // Demo 3
+      $('#context2').contextmenu({
+        target: '#context-menu2',
+        onItem: function (context, e) {
+          alert($(e.target).text());
+        }
+      });
+
+      $('#context-menu2').on('show.bs.context', function (e) {
+        console.log('before show event');
+      });
+
+      $('#context-menu2').on('shown.bs.context', function (e) {
+        console.log('after show event');
+      });
+
+      $('#context-menu2').on('hide.bs.context', function (e) {
+        console.log('before hide event');
+      });
+
+      $('#context-menu2').on('hidden.bs.context', function (e) {
+        console.log('after hide event');
+      });
+      
+    </script>
+  </body>
+</html>
