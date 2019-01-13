@@ -72,7 +72,7 @@
 			} else if ($content_article != "" && $title_article == ""){
 				header("Location: ../index.php?Error=".urlencode("No hay titulo del contenido a publicar.")."&ContentSaved=".urlencode($content_article)."#PublishedFalse");
 			} else {
-				header("Location: ../index?Error=".urlencode("No hay datos que publicar.")."#PublishedFalse");
+				header("Location: ../index.php?Error=".urlencode("No hay datos que publicar.")."#PublishedFalse");
 			}
 		}
 	}

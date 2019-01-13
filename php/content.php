@@ -231,7 +231,7 @@
 			<div class="NotFound">
 				<div class="ups">
 					Up's
-					<input type="button" onclick="javascript: window.location.href='index';" value="OK" />
+					<input type="button" onclick="javascript: window.location.href='index.php';" value="OK" />
 				</div>
 				<p class="p">
 					<?php echo $content; ?>

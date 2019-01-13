@@ -124,7 +124,7 @@ function Funct_Share(MyValue){
     if (typeof(MyValue) != "undefined"){
         if (MyValue.length > 0){
             if (MyValue == "pt"){
-                URL = "http://pinterest.com/pin/create/button/?url=http://www.sidemasters.com/?search=" + ChildContent + "&media=http://sidemasters.local/img/light_abstract_beams_lights_black_background_76367_2048x1152.jpg&description=Artículo muy interesante";
+                URL = "http://pinterest.com/pin/create/button/?url=http://31.220.54.154/?search=" + ChildContent + "&media=http://31.220.54.154/img/light_abstract_beams_lights_black_background_76367_2048x1152.jpg&description=Artículo muy interesante";
             } else if (MyValue == "fb"){
                 URL = "https://www.facebook.com/sharer/sharer.php?u=" + window.location.protocol + "//" + window.location.host + "/?search=" + ChildContent;
             } else if (MyValue == "tt"){

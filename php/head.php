@@ -11,7 +11,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:title" content="<?php echo ReturnTitle(); ?>" />
 <meta property="og:description" content="Blog de informática e Inteligencia colectiva" />
-<meta property="og:url" content="https://www.sidemasters.com" />
+<meta property="og:url" content="https://31.220.54.154" />
 <meta property="og:site_name" content="SideMasters" />
 <meta property="og:image" content="<?php echo ReturnURLImg(); ?>" />
 <meta property="article:publisher" content="http://www.facebook.com/SideMasterRoot" />
@@ -26,7 +26,7 @@
 <meta name="twitter:site" content="@sidemastergm"/>
 <meta name="twitter:image" content="<?php echo ReturnURLImg(); ?>"/>
 <meta name="twitter:creator" content="@sidemastergm"/>
-<link rel="canonical" href="http://www.sidemasters.com" />
+<link rel="canonical" href="http://31.220.54.154" />
 <link rel="shorcut icon" href="src/fav/sidemasters.png">
 <link rel="publisher" href="https://plus.google.com/+JersonMart%C3%ADnezSM">
 <link rel="stylesheet" href="css/universal.css">
