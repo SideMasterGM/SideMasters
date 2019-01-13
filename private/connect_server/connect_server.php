@@ -11,7 +11,7 @@
 
 		public function Buscar($a){
 			//$SM = new SideMasters("sidemasters.com.mysql", "sidemasters_com", "Inform@tico01", "sidemasters_com");
-			$SM = new SideMasters("127.0.0.1", "SideMaster", "Inform@tico", "sidemasters");
+			$SM = new SideMasters("127.0.0.1", "root", "", "devops");
 
 			if (!$SM->query("SET NAMES 'utf8'"))
 				die("Error al establecer SET NAMES");
@@ -34,7 +34,7 @@
 		}
 	}
 	
-	$SM = new SideMasters("127.0.0.1", "SideMaster", "Inform@tico", "sidemasters");
+	$SM = new SideMasters("127.0.0.1", "root", "", "devops");
 	//$SM = new SideMasters("sidemasters.com.mysql", "sidemasters_com", "Inform@tico01", "sidemasters_com");
 
 	if ($SM->connect_error)
