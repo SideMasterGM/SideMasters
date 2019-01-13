@@ -74,7 +74,7 @@ function CheckPassword(){
 
 $("#ClickSignIn").click(function(){
 	$.ajax({
-		url: "php/signin",
+		url: "php/signin.php",
 		type: "post",
 		data: $("#FormSignIn").serialize(),
 		success: function(data){
@@ -87,7 +87,7 @@ $("#ClickSignIn").click(function(){
 
 $("#ClickLogin").click(function(){
 	$.ajax({
-		url: "php/login",
+		url: "php/login.php",
 		type: "post",
 		data: $("#FormLogin").serialize(),
 		success: function(data){
@@ -116,7 +116,7 @@ function Funct_Share(network, title_post){
 	if (typeof(network) != "undefined" && typeof(title_post) != "undefined"){
 		if (network.length > 0 && title_post.length > 0){
 			if (network == "pt"){
-                URL = "http://pinterest.com/pin/create/button/?url=http://www.sidemasters.com/?search=" + encodeURIComponent(title_post + "&comment=yes") + "&media=http://sidemasters.local/img/light_abstract_beams_lights_black_background_76367_2048x1152.jpg&description=Artículo muy interesante";
+                URL = "http://pinterest.com/pin/create/button/?url=http://31.220.54.154/?search=" + encodeURIComponent(title_post + "&comment=yes") + "&media=http://sidemasters.local/img/light_abstract_beams_lights_black_background_76367_2048x1152.jpg&description=Artículo muy interesante";
             } else if (network == "fb"){
                 URL = "https://www.facebook.com/sharer/sharer.php?u=" + encodeURIComponent(window.location.protocol + "//" + window.location.host + "/?search=" + title_post + "&comment=yes");
             } else if (network == "tt"){
