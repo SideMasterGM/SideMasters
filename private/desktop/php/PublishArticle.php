@@ -25,15 +25,15 @@
 					}
 
 					if ($x != count($array_)-1)
-						header("Location: ../index?Error=".urlencode("Categorías no registradas!.")."#PublishedFalse");
-					header("Location: ../index#PublishedTrue");
+						header("Location: ../index.php?Error=".urlencode("Categorías no registradas!.")."#PublishedFalse");
+					header("Location: ../index.php#PublishedTrue");
 				} else {
 					$RHere = $SM->query("SELECT * FROM sm_publish_article WHERE title='".htmlspecialchars_decode($title_article)."';");
 					if ($RHere->num_rows > 0){
-						header("Location: ../index?Error=".urlencode("El título ya existe, ingrese otro.")."&TitleSaved=".urldecode($title_article)."&ContentSaved=".urlencode(htmlspecialchars_decode($content_article))."&Selected_Categories=".urlencode($_POST['category_selected'])."#PublishedFalse");
+						header("Location: ../index.php?Error=".urlencode("El título ya existe, ingrese otro.")."&TitleSaved=".urldecode($title_article)."&ContentSaved=".urlencode(htmlspecialchars_decode($content_article))."&Selected_Categories=".urlencode($_POST['category_selected'])."#PublishedFalse");
 						die();
 					}
-					header("Location: ../index?Error=".urlencode("La redacción no se ha publicado.")."&TitleSaved=".urldecode($title_article)."&ContentSaved=".urlencode(htmlspecialchars_decode($content_article))."&Selected_Categories=".urlencode($_POST['category_selected'])."#PublishedFalse");
+					header("Location: ../index.php?Error=".urlencode("La redacción no se ha publicado.")."&TitleSaved=".urldecode($title_article)."&ContentSaved=".urlencode(htmlspecialchars_decode($content_article))."&Selected_Categories=".urlencode($_POST['category_selected'])."#PublishedFalse");
 				}
 			} else if (@$_POST['WhatIs'] == "Editar"){
 				$OriginalTitle = $_POST['OriginalTitle'];
@@ -50,7 +50,7 @@
 									}
 								}
 							}
-							header("Location: ../index#PublishedTrue");
+							header("Location: ../index.php#PublishedTrue");
 						} else {
 							echo "Error al querer eliminar los registros con el nombre anterior!.";
 						}
@@ -66,11 +66,11 @@
 			}
 		} else {
 			if ($content_article == "" && $title_article == ""){
-				header("Location: ../index?Error=".urlencode("No hay titulo ni contenido que publicar")."#PublishedFalse");
+				header("Location: ../index.php?Error=".urlencode("No hay titulo ni contenido que publicar")."#PublishedFalse");
 			} else if ($content_article == "" && $title_article != ""){
-				header("Location: ../index?Error=".urlencode("No hay contenido que publicar.")."&TitleSaved=".urlencode($title_article)."#PublishedFalse");
+				header("Location: ../index.php?Error=".urlencode("No hay contenido que publicar.")."&TitleSaved=".urlencode($title_article)."#PublishedFalse");
 			} else if ($content_article != "" && $title_article == ""){
-				header("Location: ../index?Error=".urlencode("No hay titulo del contenido a publicar.")."&ContentSaved=".urlencode($content_article)."#PublishedFalse");
+				header("Location: ../index.php?Error=".urlencode("No hay titulo del contenido a publicar.")."&ContentSaved=".urlencode($content_article)."#PublishedFalse");
 			} else {
 				header("Location: ../index?Error=".urlencode("No hay datos que publicar.")."#PublishedFalse");
 			}
