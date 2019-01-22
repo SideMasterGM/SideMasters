@@ -1,12 +1,12 @@
 <?php
 	ini_set('error_reporting', E_ALL);
-	include_once("php/analyticstracking.php");
 ?>
 
 <!DOCTYPE html>
 <html lang="es">
 	<head>
 		<?php include("php/head.php"); ?>
+		<?php include("php/analyticstracking.php"); ?>
 	</head>
 
 	<body>
