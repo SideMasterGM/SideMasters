@@ -3,6 +3,6 @@
         Más información
     </li>
     <li class="list-group-item">
-        <a href="https://www.sidemasters.com/about" target="_blank">Ir al sitio principal (Side Masters)</a>
+        <a href="https://fulldevops.es/" target="_blank">Ir al sitio principal (Side Masters)</a>
     </li>
 </ul>

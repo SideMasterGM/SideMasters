@@ -10,8 +10,8 @@
 		public $buscador;
 
 		public function Buscar($a){
-			//$SM = new SideMasters("sidemasters.com.mysql", "sidemasters_com", "Inform@tico01", "sidemasters_com");
-			$SM = new SideMasters("127.0.0.1", "root", "root", "devops");
+			$SM = new SideMasters("127.0.0.1", "root", "", "devops");
+			// $SM = new SideMasters("127.0.0.1", "root", "SGDBMySQLFullDevOps", "devops");
 
 			if (!$SM->query("SET NAMES 'utf8'"))
 				die("Error al establecer SET NAMES");
@@ -34,8 +34,8 @@
 		}
 	}
 	
-	$SM = new SideMasters("127.0.0.1", "root", "root", "devops");
-	//$SM = new SideMasters("sidemasters.com.mysql", "sidemasters_com", "Inform@tico01", "sidemasters_com");
+	$SM = new SideMasters("127.0.0.1", "root", "", "devops");
+	// $SM = new SideMasters("127.0.0.1", "root", "SGDBMySQLFullDevOps", "devops");
 
 	if ($SM->connect_error)
 		die("Ha ocurrido el siguiente error: ".$SM->connect_errno." -> ".utf8_encode($SM->connect_error));
