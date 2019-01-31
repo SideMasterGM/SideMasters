@@ -1,5 +1,6 @@
 <?php
-    $CN = new mysqli("127.0.0.1", "root", "", "fulldevops");
+    // $CN = new mysqli("127.0.0.1", "root", "", "fulldevops");
+    $CN = new mysqli("127.0.0.1", "root", "SGDBMySQLFullDevOps", "fulldevops");
 
     $Email = $_POST['email'];
 
